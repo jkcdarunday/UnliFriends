@@ -1,10 +1,4 @@
-#include <stdio.h>
-
-typedef struct nodetag node;
-struct nodetag{
-    node *prev, *next; //Pointers that points to the previous and the next nodes
-    void *data; //Points to the data the the node is refering to. You'll have to typecast the data by using something like *(int*)node->data
-};
+#include "unlifriends.h"
 
 void insert_head(){
 }
