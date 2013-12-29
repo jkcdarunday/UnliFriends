@@ -19,13 +19,22 @@ list* new_list(){
     return tmp;
 }
 
-void insert_head(){
+void insert_head(list *l, node *tmp){
+  tmp->next = l->head->next;
+  tmp->prev = l->head;
+  l->head->next->prev = tmp;
+  l->head->next = tmp;
 }
 
-void insert_tail(){
+void insert_tail(list *l, node *tmp){
+  tmp->next = l->tail;
+  tmp->prev = l->tail->prev;
+  l->tail->prev->next = tmp;
+  l->tail->prev = tmp;
 }
 
 void insert_sort(){
+  
 } 
 
 void delete(){
