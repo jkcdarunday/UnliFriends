@@ -31,10 +31,6 @@ void insert_tail(list *l, node *tmp){
     tmp->prev = l->tail->prev;
     l->tail->prev->next = tmp;
     l->tail->prev = tmp;
-}
-
-void insert_sort(){
-  
 } 
 
 void delete(list *l, node *trg){

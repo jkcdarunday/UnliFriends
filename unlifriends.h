@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
+// STRUCTURES
 typedef struct nodetag node;
 typedef struct studenttag student;
 typedef struct listtag list;
@@ -15,15 +15,19 @@ struct nodetag{
 
 struct listtag{
     node *head, *tail;
-}
+};
 
 struct studenttag{
     char *name, *course, *snum;
-}
+};
 
-void insert_head();
-void insert_tail();
-void insert_sort();
-void delete();
+// linked list functions
+node *new_node();
+list *new_list();
+void insert_head(list *, node *);
+void insert_tail(list *, node *);
+void delete(list *, node *);
 
+// student functions
+student *s_new(const char *, const char *, const char *);
 #endif
