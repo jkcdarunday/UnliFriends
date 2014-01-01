@@ -30,4 +30,5 @@ void delete(list *, node *);
 
 // student functions
 student *s_new(const char *, const char *, const char *);
+int s_add(list *l, student *s);
 #endif

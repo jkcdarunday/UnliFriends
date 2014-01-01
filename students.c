@@ -15,12 +15,11 @@ int s_add(list *l, student *s){
 	insert_head(l, tmp);
     }else{
 	node *p = l->head->next;
-	for(;p!=l->tail;p=p->next){
-	    if(p->data==s) 
+	for(;p!=l->tail;p=p->next){ // traverse through the linked list
+	    if(p->data==s) // checking for same data
 		return 1; // student is already in the list
 	}
-	// student not in the list, append in the list
-	insert_tail(l, tmp);
+	insert_tail(l, tmp); // student not in the list, append in the list
     }
     return 0; // student is added successfully
 }
