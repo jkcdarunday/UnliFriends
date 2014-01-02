@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 // STRUCTURES
 typedef struct nodetag node;
 typedef struct studenttag student;
