@@ -2,9 +2,9 @@
 
 student *s_new(const char *name, const char *course, const char *snum){
     student *s=malloc(sizeof(student));
-    strcpy(s->name, name);
-    strcpy(s->course, course);
-    strcpy(s->snum, snum);
+    strcpy(s->name=strlen(name)+1, name);
+    strcpy(s->course=strlen(course)+1, course);
+    strcpy(s->snum=strlen(snum)+1, snum);
     return s;
 }
 
