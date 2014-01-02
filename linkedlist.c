@@ -15,7 +15,9 @@ list* new_list(){
     tmp->head=new_node();
     tmp->tail=new_node();
     tmp->head->next=tmp->tail;
+    tmp->head->prev=tmp->tail;
     tmp->tail->next=tmp->head;
+    tmp->tail->prev=tmp->head;
     return tmp;
 }
 
