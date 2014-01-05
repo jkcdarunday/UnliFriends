@@ -35,7 +35,7 @@ int s_add(list *l, student *s){
 }
 
 void s_edit(student *s, const char *name, const char *course, const char *snum){
-    strcpy(s->data->name, name);
-    strcpy(s->data->snum, snum);
-    strcpy(s->data->course, course);
+    strcpy(s->name, name);
+    strcpy(s->snum, snum);
+    strcpy(s->course, course);
 }

@@ -7,5 +7,7 @@ int main(void){
     s_add(l, s1);
     student *s = (student *)l->head->next->data;
     printf("Name>>%s\nCourse>>%s\nStudent No>>%s\n", s->name, s->course, s->snum);
+    s_edit(s1, "Keith","BSCS","2012-10053");
+    printf("Name>>%s\nCourse>>%s\nStudent No>>%s\n", s->name, s->course, s->snum);
     return 0;
 }
